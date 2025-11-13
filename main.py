@@ -1,7 +1,9 @@
 # 1. Importa os outros arquivos como módulos
 import Interpolacao
 import Decomposicao
-import Ajustes_de_curvas  # <-- Note o nome corrigido, sem .py
+import Ajustes_de_curvas 
+import Calculadora_de_binarios
+ 
 
 def exibir_menu_principal():
     """
@@ -14,27 +16,31 @@ def exibir_menu_principal():
         print("1. Módulo de Interpolação")
         print("2. Módulo de Decomposição (Sistemas Lineares)")
         print("3. Módulo de Ajuste de Curvas")
+        print("4. Calculadora de Binários")
+
         print("0. Sair do Programa")
 
         escolha = input("\nEscolha o módulo que deseja usar: ").strip()
 
         if escolha == '1':
             print("\n...Iniciando Módulo de Interpolação...")
-            # 2. Chama a função 'menu' do arquivo Interpolacao.py
             Interpolacao.menu() 
             print("\n...Módulo de Interpolação finalizado. Retornando ao menu principal...")
 
         elif escolha == '2':
             print("\n...Iniciando Módulo de Decomposição...")
-            # 2. Chama a função 'main' do arquivo Decomposicao.py
             Decomposicao.main() 
             print("\n...Módulo de Decomposição finalizado. Retornando ao menu principal...")
 
         elif escolha == '3':
             print("\n...Iniciando Módulo de Ajuste de Curvas...")
-            # 2. Chama a função 'menu' do arquivo Ajustes_de_curvas.py
             Ajustes_de_curvas.menu() 
             print("\n...Módulo de Ajuste de Curvas finalizado. Retornando ao menu principal...")
+        
+        elif escolha == '4':
+            print("\n...Iniciando a Calculadora de binarios...")
+            Calculadora_de_binarios.calcular() 
+            print("\n...Calculadora de binários finalizada. Retornando ao menu principal...")
 
         elif escolha == '0':
             print("Encerrando o programa principal. Até mais!")
