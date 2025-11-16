@@ -1,4 +1,4 @@
-# 🚀 Projeto de Cálculo Numérico
+# Projeto de Cálculo Numérico
 
 > Projeto acadêmico desenvolvido em Python, abordando os principais algoritmos e métodos numéricos estudados na disciplina de Cálculo Numérico.
 
