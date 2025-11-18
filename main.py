@@ -39,7 +39,7 @@ def exibir_menu_principal():
         
         elif escolha == '4':
             print("\n...Iniciando a Calculadora de binarios...")
-            Calculadora_de_binarios.calcular() 
+            Calculadora_de_binarios.main() 
             print("\n...Calculadora de binários finalizada. Retornando ao menu principal...")
 
         elif escolha == '0':
