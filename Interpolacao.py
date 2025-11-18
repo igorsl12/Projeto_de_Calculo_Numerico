@@ -217,9 +217,10 @@ def menu():
         print(f"Pontos y: {y}")
         
         if isinstance(resultado, str): # Verifica se a função retornou uma string de erro
-            print(f"Resultado: {resultado}")
+            print(f"O valor interpolado em x = {xi} é y = {resultado:.3f}")
+            print(f"Resultado: {resultado:.3f}")
         else:
-            print(f"O valor interpolado em x = {xi} é y = {resultado:.6f}")
+            print(f"O valor interpolado em x = {xi} é y = {resultado:.3f}")
             
             # --- Bloco que chama a função de erro ---
             print("-------------------") 
